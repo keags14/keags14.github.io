@@ -1,8 +1,8 @@
 /* Basic Style */
 body {
-  background: #fff;
-  color: #333;
-  font-family: Lato, sans-serif;
+    background: #fff;
+    color: rgb(4, 11, 104);
+    font: lighter 16px Arial, Helvetica, sans-serif;
 }
 .container {
   display: block;
