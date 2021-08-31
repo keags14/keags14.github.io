@@ -988,6 +988,13 @@ section {
 		background-color: #0563bb;
 	}
 
+	.box-2 {
+		background-color: wheat;
+		border: 5px rebeccapurple solid;
+		padding: 20px;
+		margin: 10px;
+	}
+
 @media (min-width: 992px) {
 	.testimonials .testimonial-item p {
 		width: 80%;
