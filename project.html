@@ -8,6 +8,7 @@
     <link href="css/profileStyle.css" , rel="stylesheet" />
 </head>
 <body>
+<script src="js/authentication.js"></script>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Main Menu</a>
@@ -16,7 +17,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="homePage.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="project.html">Projects</a>
                     <a class="nav-item nav-link" href="https://www.linkedin.com/in/keagan-gonsalves-b9233686/">LinkedIn</a>
                     <a class="nav-item nav-link disabled" href="#">Disabled</a>
@@ -26,26 +27,55 @@
     </header>
     <div class=".container">
         <h1>Project</h1>
-        <table>
+        <table class="table-container">
             <thead>
                 <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Year</th>
+                    <th class="custom-font">Project Name</th>
+                    <th class="custom-font">Description</th>
+                    <th class="custom-font">Year</th>
                 </tr>
             </thead>
             <thead>
                 <tr>
-                    <td>Agile Project</td>
-                    <td>Did some stuff with user stories</td>
-                    <td>2021</td>
+                    <th class="custom-font">ALL SAINTS</th>
+                    <td>
+                        <ul class="no-bullets">
+                            <li>Build automations regression suite for their web-based applications using Selenium, Cucumber,Web driver,
+                            Proto Files, Java, MySQL, Postgres to test their back-end systems and front-end covering regression, API,
+                            Integration, functional, end-to-end testing, smoke testing, exploratory and component testing.
+                            </li>
+                            <li>
+                            We used an agile methodology during my time in Sparta using kanban board in Jira and to report bugs for any errors
+                            caught during the test run, we also used JIRA to cover manual testing, creating Test Executions and Test Plans
+                            for each run covering the steps and evidence with screenshots.
+                            </li>
+                            <li>
+                            Git was used to create Pull Request and CI/CD to integrate with the different environments using pipelines that were set up for the project by the team.
+                            I covered manual testing for the new website that was launched last year for all the back end microservices
+                            and third-party vendors to cover integrations with the system.
+                            </li>
+                            <li>
+                            Additionally, we used GCP as a cloud service for our apps which we covered both in manual and automation testing. Confluence was used to document the
+                            automations systems we build and as a reference to represent the source of truth.
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="custom-font">2021</td>
                 </tr>
             </thead>
             <thead>
                 <tr>
-                    <td>API Project</td>
-                    <td>Made request, bad responses</td>
-                    <td>2021</td>
+                    <th class="custom-font">SKY</th>
+                    <td>
+                        <ul class="no-bullets">
+                            <li>Performed automations tests for Windows-based app using QTP and covered manually testing for the front end and a little bit of the back end.
+                            </li>
+                            <li>We followed an agile approach with the project again using an agile methodology using Jira boards to gather requirements from the Business Analysts, Bug management
+                                and capture tasks, bugs and new functionalities or asks from the business.
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="custom-font">2022</td>
                 </tr>
             </thead>
         </table>

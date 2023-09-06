@@ -1,15 +1,13 @@
 ﻿body {
-    background-image: url(https://wallpapercave.com/wp/zuiHX0K.jpg) ;
-    color: rgb(4, 11, 104);
-    /*font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: lighter;*/
+    background-image: url(https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg) ;
+    background-size: cover;
+    color: rgb(240, 240, 240);
     font: lighter 16px Arial, Helvetica, sans-serif;
 }
 
 .myform{
     background-color: grey;
-    color: blanchedalmond;
+    color: black;
     padding: 50px;
     margin: 10px;
 }
@@ -29,7 +27,10 @@
 }
 
 h1 {
-    color: #ff0000;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container {
@@ -80,8 +81,31 @@ nav #mainNav{
     justify-content center;
 }
 
-table, th, td {
+th, td {
     border: 1px solid black;
-    text-align: center;
+    text-align: left;
     padding: 5px;
+    color: black
+}
+
+.table-container {
+    margin: 0 auto; /* Set left and right margin to "auto" */
+    width: 50%; /* Optional: Adjust the width as needed */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul.no-bullets {
+    font-family: "Times New Roman", Times, serif;
+    list-style-type: none;
+    text: right;
+    padding: 0px;
+    margin: 0px;
+    font-size: auto;
+}
+
+.custom-font {
+    font-family: 'Times New Roman', Times, serif;
 }
