@@ -3,30 +3,36 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Keagan Nigel Gonsalves" />
     <meta name="description" content="This is a great web page" />
+    <meta name="keywords" content="Keagan Gonsalves, Developer, Portfolio">
+    <meta property="og:title" content="Keagan Gonsalves Portfolio">
+    <meta property="og:image" content="images/profilepic.png">
+    <title>My Profile</title>
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/ximg/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Vendor CSS Files -->
-    <link href="vendor/aos/aos.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/extraStyle.css">
+
+    <!-- Three.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js" defer></script>
 </head>
 <body>
 <div class="container">
-    <!-- ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <header id="header" class="d-flex flex-column justify-content-center">
         <nav id="navbar" class="navbar nav-menu">
@@ -34,7 +40,7 @@
                 <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
                 <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
                 <li><a href="#resume" class="nav-link scrollto" onclick="startDownload()"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                <script src="js/download.js"></script>
+                <script src="js/download.js" defer></script>
                 <li><a href="https://github.com/keags14/" class="nav-link scrollto" target="_blank"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
                 <li><a href="project.html" class="nav-link scrollto" target="_blank"><i class="bx bx-server"></i> <span>Projects</span></a></li>
                 <li><a href="mailto:kingkeags14@gmail.com" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -63,6 +69,7 @@
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
+                    <script src="js/neutron.js"></script>
                     <h2> About</h2>
                     <p>
                         I am an experienced QA automation engineer based in the United Kingdom with a diverse skill set
@@ -103,110 +110,37 @@
                 </div>
                 <section class="box-2">
                     <h4>Goals</h4>
-                    <p><b>Transition to a Software Development Role: </b> As an experienced QA automation engineer, I've gained valuable skills in testing and automation.
-                        My goal is to transition into a software development role.
-                        I can achieve this by further honing your coding skills and understanding of software development principles.
-                    </p>
-                    <p>
-                        <b>Expand Programming Skills: </b> Given my proficiency in Java and C#, I am focused on expanding my knowledge in these languages.
-                        Additionally, I am considering exploring other relevant languages such as Python, JavaScript, or TypeScript to broaden my skill set.
-                    </p>
-                    <p>
-                        <b>Contribute to Open Source Projects: </b> To gain practical development experience, I want to start contributing to open source projects
-                        in my areas of interest. In order to help me build a portfolio of coding projects and collaborate with experienced developers.
-                    </p>
-                    <p>
-                        <b>Master Software Development Best Practices: </b>I want dive deep into software development best practices, including design patterns,
-                        clean code principles, and architectural concepts. I already have an understanding of these concepts however, I believe it would be great
-                        to do as much research as possible.
-                    </p>
-                    <p>
-                        <b>Build Personal Coding Projects: </b>Creating my own software projects to apply what you've learned. This could be a web or mobile app,
-                        a utility tool, or any software that aligns with my interests.
-                    </p>
-                    <p>
-                        <b>Networking and Job Search: </b>Utilize my LinkedIn profile to connect with professionals in the software development field.
-                        Attend industry events, workshops, and meetups to expand my network. Start actively searching for software development job opportunities that
-                        match my career goals.
-                    </p>
-                    <p>
-                        <b>Certifications: </b>I am considering pursuing relevant certifications in software development, such as those for specific programming languages,
-                        frameworks, or development methodologies.
-                    </p>
-                    <p>
-                        <b>Continued Learning: </b>Staying up-to-date with the latest trends and technologies in software development. Follow industry blogs,
-                        taking online courses, and participate in relevant online communities to keep my knowledge always upto date.
-                    </p>
-                    <p>
-                        <b>Soft Skills Development: </b>In addition to technical skills, I want to work on improving my soft skills such as communication, teamwork,
-                        and problem-solving.
-                    </p>
-                    <p>
-                        <b>Long-Term Career Planning: </b>Create a long-term career plan that outlines my career milestones and goals. Consider where I want to
-                        be in 5, 10, or 20 years and what steps I need to take to reach those milestones.
-                    </p>
+                    <div class="goal-section">
+                        <p><b>Transition to a Software Development Role:</b> As an experienced QA automation engineer, I've gained valuable skills in testing and automation. My goal is to transition into a software development role by further honing my coding skills and understanding of software development principles.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Expand Programming Skills:</b> Given my proficiency in Java and C#, I am focused on expanding my knowledge in these languages. Additionally, I am exploring other relevant languages such as Python, JavaScript, and TypeScript to broaden my skill set.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Contribute to Open Source Projects:</b> To gain practical development experience, I want to start contributing to open source projects in my areas of interest. This will help me build a portfolio of coding projects and collaborate with experienced developers.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Master Software Development Best Practices:</b> I want to dive deep into software development best practices, including design patterns, clean code principles, and architectural concepts. While I already understand these concepts, I aim to do as much research as possible to master them.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Build Personal Coding Projects:</b> I plan to create my own software projects to apply what I've learned. This could be a web or mobile app, a utility tool, or any software that aligns with my interests.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Networking and Job Search:</b> I will utilize my LinkedIn profile to connect with professionals in the software development field. Attending industry events, workshops, and meetups will help me expand my network. I'll start actively searching for software development job opportunities that match my career goals.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Certifications:</b> I am considering pursuing relevant certifications in software development, such as those for specific programming languages, frameworks, or development methodologies.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Continued Learning:</b> Staying up-to-date with the latest trends and technologies in software development is crucial. I will follow industry blogs, take online courses, and participate in relevant online communities to keep my knowledge current.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Soft Skills Development:</b> In addition to technical skills, I am working on improving my soft skills such as communication, teamwork, and problem-solving.</p>
+                    </div>
+                    <div class="goal-section">
+                        <p><b>Long-Term Career Planning:</b> I will create a long-term career plan that outlines my career milestones and goals. Considering where I want to be in 5, 10, or 20 years, I'll map out the steps needed to reach those milestones.</p>
+                    </div>
                 </section>
-            </div>
-            <div class="review-container">
-                <div class="review-header">
-                    <h2>Customer Reviews</h2>
-                    <div class="rating-summary">
-                        <div class="average-rating">4.0</div>
-                        <div class="stars">
-                            <span class="star full">&#9733;</span>
-                            <span class="star full">&#9733;</span>
-                            <span class="star full">&#9733;</span>
-                            <span class="star full">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                        </div>
-                        <div class="reviews-count">(1 Reviews)</div>
-                    </div>
-                    <div class="rating-breakdown">
-                        <div class="rating-bar">
-                            <span class="bar-label">5 &#9733;</span>
-                            <div class="bar"><div class="fill" style="width: 0%;"></div></div>
-                            <span class="count">0</span>
-                        </div>
-                        <div class="rating-bar">
-                            <span class="bar-label">4 &#9733;</span>
-                            <div class="bar"><div class="fill" style="width: 100%;"></div></div>
-                            <span class="count">1</span>
-                        </div>
-                        <div class="rating-bar">
-                            <span class="bar-label">3 &#9733;</span>
-                            <div class="bar"><div class="fill" style="width: 0%;"></div></div>
-                            <span class="count">0</span>
-                        </div>
-                        <div class="rating-bar">
-                            <span class="bar-label">2 &#9733;</span>
-                            <div class="bar"><div class="fill" style="width: 0%;"></div></div>
-                            <span class="count">0</span>
-                        </div>
-                        <div class="rating-bar">
-                            <span class="bar-label">1 &#9733;</span>
-                            <div class="bar"><div class="fill" style="width: 0%;"></div></div>
-                            <span class="count">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-body">
-                    <h3>Top Customer Reviews</h3>
-                    <p class="disclaimer">Where reviews refer to foods or cosmetic products, results may vary from person to person. Customer reviews are independent and do not represent the views of The Hut Group.</p>
-                    <div class="individual-review">
-                        <h4>Loved it but disappointed with a pro... <span class="stars"><span class="star full">&#9733;</span><span class="star full">&#9733;</span><span class="star full">&#9733;</span><span class="star full">&#9733;</span><span class="star">&#9733;</span></span></h4>
-                        <p>Some really great items was disappointed with the wunderkiss lip plumper as after 3 uses the applicator broke was loving using it would have purchased this as a future item but due to the issues I won't bother. The other products are lovely</p>
-                        <p class="review-date">22/07/2024 by lynsey <span class="verified">VERIFIED PURCHASE</span></p>
-                        <div class="review-feedback">
-                            <p>Was this helpful?</p>
-                            <div class="feedback-buttons">
-                                <button class="feedback-btn yes">YES (0)</button>
-                                <button class="feedback-btn no">NO (0)</button>
-                                <a href="#" class="report-link">Report this review</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="write-review-btn">WRITE A REVIEW</button>
             </div>
         </section>
         <section>
@@ -216,12 +150,6 @@
                 <input id="mysearch" name="q" type="text" value="Keagan Nigel Gonsalves" /><br />
                 <input class="button" type="submit" value="Search" />
             </form>
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" placeholder="Search">
-                <i class="material-icons">
-                    search
-                </i>
-            </div>
         </section>
     </main>
     <footer>
@@ -233,16 +161,18 @@
 
 <!-- Vendor JS Files -->
 <script src="vendor/aos/aos.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/glightbox/js/glightbox.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<script src="vendor/glightbox/js/glightbox.min.js" defer></script>
 <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="vendor/php-email-form/validate.js"></script>
 <script src="vendor/purecounter/purecounter.js"></script>
-<script src="vendor/swiper/swiper-bundle.min.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js" defer></script>
 <script src="vendor/typed.js/typed.min.js"></script>
 <script src="vendor/waypoints/noframework.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <!-- Template Main JS File -->
 <script src="js/main.js"></script>
+<script src="js/neutron.js"></script>
 </body>
 </html>

@@ -1,111 +1,79 @@
-﻿body {
-    background-image: url(https://i.ytimg.com/vi/_yTz5rs-55I/maxresdefault.jpg) ;
-    background-size: cover;
-    color: rgb(240, 240, 240);
-    font: lighter 16px Arial, Helvetica, sans-serif;
-}
-
-.myform{
-    background-color: grey;
-    color: black;
-    padding: 50px;
-    margin: 10px;
-}
-
-.myform input[type= "text"]{
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.button{
-    padding: 8px;
-    border: none;
-    background-color: darkblue;
-    color: whitesmoke;
-}
-
-h1 {
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    margin: 0 auto;
-}
-
+﻿/* Container */
 .container {
-    width: 80%;
-    margin: auto
+    position: relative;
+    width: 400px;
+    height: 200px;
+    text-align: center;
 }
 
-nav #mainNav{
-    background-color: #0636ff;
+/* Atom */
+.atom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    z-index: 1; /* This positions the atom behind the h1 */
 }
 
-.nav-item {
-    list-style-type: none;
-    display: inline-block;
-    width: 10vw;
+.nucleus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
 }
 
-.box-1 {
-    background-color: whitesmoke;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;
-    border-left: 5px red solid;
-    border-right: 5px red solid;
-    border-style: ridge;
-    padding-left: 20%;
-    padding-right: 20%;
+.electron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    transform-origin: -85px 0;
+    box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.5), 3px 3px 8px rgba(255, 255, 255, 0.3);
 }
 
-.box-1 h4{
-    font-family: Tahoma;
-    font-weight: 800;
-    font-style: italic;
-    text-decoration: underline;
-    text-transform:uppercase;
-    letter-spacing:0.1em;
+.orbit1 {
+    animation: spin1 5s linear infinite;
 }
 
-.box-2 {
-    background-color: wheat;
-    border: 5px rebeccapurple solid;
-    padding: 20px;
-    margin: 10px;
+.orbit2 {
+    animation: spin2 5s linear infinite;
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content center;
+.orbit3 {
+    animation: spin3 5s linear infinite;
 }
 
-th, td {
-    border: 1px solid black;
-    text-align: left;
-    padding: 5px;
-    color: black
+/* Keyframes */
+@keyframes spin1 {
+    from { transform: rotateY(0deg) rotateZ(0deg); }
+    to { transform: rotateY(360deg) rotateZ(360deg); }
 }
 
-.table-container {
-    margin: 0 auto; /* Set left and right margin to "auto" */
-    width: 50%; /* Optional: Adjust the width as needed */
+@keyframes spin2 {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-table {
-    border-collapse: collapse;
+@keyframes spin3 {
+    from { transform: rotateZ(0deg) rotateX(0deg); }
+    to { transform: rotateZ(360deg) rotateX(360deg); }
 }
 
-ul.no-bullets {
-    font-family: "Times New Roman", Times, serif;
-    list-style-type: none;
-    text: right;
-    padding: 0px;
-    margin: 0px;
-    font-size: auto;
-}
-
-.custom-font {
-    font-family: 'Times New Roman', Times, serif;
+/* h1 styling */
+h1 {
+    position: relative; /* Needed to be on top of the atom */
+    z-index: 2; /* Ensure the text is on top */
+    color: #fff;
+    font-size: 2rem;
 }
